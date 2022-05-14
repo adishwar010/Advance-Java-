@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>servletTut</display-name>
+  
+  <!-- Servlet Config -->
+
+<servlet>
+	<servlet-name>first</servlet-name>
+	<servlet-class>com.servlets.FirstServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>second</servlet-name>
+	<servlet-class>com.servlets.SecondServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>third</servlet-name>
+	<servlet-class>com.servlets.ThirdServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>form</servlet-name>
+	<servlet-class>com.servlets.httpPractice</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>age</servlet-name>
+	<servlet-class>com.servlets.VotingAge</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>register</servlet-name>
+	<servlet-class>com.servlets.RegisterJDBC</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>search</servlet-name>
+	<servlet-class>com.servlets.SearchJDBC</servlet-class>
+</servlet>
+
+<!-- Servlet Mapping --> 
+<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/first</url-pattern>
+</servlet-mapping> 
+
+<servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/second</url-pattern>
+</servlet-mapping> 
+  
+ <servlet-mapping>
+	<servlet-name>third</servlet-name>
+	<url-pattern>/third</url-pattern>
+</servlet-mapping> 
+
+<servlet-mapping>
+	<servlet-name>form</servlet-name>
+	<url-pattern>/registrationform</url-pattern>
+</servlet-mapping> 
+
+<servlet-mapping>
+	<servlet-name>age</servlet-name>
+	<url-pattern>/age</url-pattern>
+</servlet-mapping> 
+
+<servlet-mapping>
+	<servlet-name>register</servlet-name>
+	<url-pattern>/registration</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>search</servlet-name>
+	<url-pattern>/Search</url-pattern>
+</servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
